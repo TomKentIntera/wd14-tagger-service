@@ -60,6 +60,9 @@ async def upload(
             "rating": rating,
             "character_res": character_res,
             "general_res": general_res,
+            # Lets callers tell which model produced the rating scores, so scores from different
+            # models are not mixed (Emaki's rating model only reads wd-eva02-large-tagger-v3 votes).
+            "model": InferSettingCurrent.wd_model_name,
         }
     except LoadError as e:
         logger.exception(e)

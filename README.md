@@ -102,7 +102,9 @@ To view interface documentation and debug, visit the `/docs` page.
     "old": 0.8643935322761536,
     "old man": 0.7388820052146912,
     "wizard": 0.5636041164398193
-  }
+  },
+  // The model that produced these results (WD_MODEL_NAME).
+  "model": "wd-eva02-large-tagger-v3"
 }
 ```
 
